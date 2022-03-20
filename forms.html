@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    
+    <h3> Radio Buttons </h3>
+    <p> Select your favorite music genre: </p>
+
+    <input type="radio" name="music" value="rock">
+    <label for="rock"> Rock </label>
+
+    <input type="radio" name="music" value="pop">
+    <label for="pop"> Pop </label>
+
+    <input type="radio" name="music" value="jazz">
+    <label for="jazz"> Jazz </label>
+
+    <p> Select your favorite car: </p>
+
+    <input type="radio" name="car" value="Honda">
+    <label for="honda"> Honda </label>
+
+    <input type="radio" name="car" value="bmw">
+    <label for="bmw"> BMW </label>
+
+    <input type="radio" name="car" value="mclaren">
+    <label for="mclaren"> McLAren </label>
+    
+    <h3> Checkboxes </h3>
+    <p> Please select your favorite food </p>
+
+    <input type="checkbox" name="food" id="beef" value="beef">
+    <label for="beef"> Beef </label>
+
+    <input type="checkbox" name="food" id="salad" value="salad">
+    <label for="salad"> Salad </label>
+
+    <input type="checkbox" name="food" id="apple" value="apple">
+    <label for="apple"> Apple </label>
+
+    <h3> Dropdown List Box </h3>
+    <p> What is your device </p>
+
+    <select name="device" id="device">
+        <option value="mac"> Macbook </option>
+        <option value="pc"> PC </option>
+        <option value="tablet"> Tablet </option>
+        <option value ="android"> Anroid </option>
+    </select>
+
+    <h3> Multiple Select Box </h3>
+
+    <select name="device" id="device" multiple>
+        <option value="mac"> Macbook </option>
+        <option value="pc"> PC </option>
+        <option value="tablet"> Tablet </option>
+        <option value ="android"> Anroid </option>
+    </select>
+
+    <h3> File Input Box </h3>
+    Select your profile picture:
+    <input type="file" name="file" id="file">
+
+    <input type="submit" name="submit" value="Cancel">
+
+    <h3> Image Button </h3>
+    <input type="image" src="https://www.pngall.com/wp-content/uploads/2016/05/Click-Here-Download-PNG.png" width="15%" height="15%">
+
+    <button> Accept </button>
+
+
+
+    <hr>
+    <h2> Registration Form </h2>
+    <form method="#">
+        <label for="fullname"> Full Name </label>
+        <input type="text" name="fullname" placeholder="JOHN JAMES" required>
+
+        <br>
+
+        <label for="password"> Passowrd </label>
+        <input type="password" minlength="5" maxlength ="10" required>
+
+        <br>
+        <label for="age"> Age </label>
+        <input type="number" min="5" max="70">
+
+
+        <br>
+
+        <input type="submit" value="Register">
+    </form>
+
+
+
+
+
+</body>
+</html>

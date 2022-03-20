@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout</title>
+</head>
+    <style>
+        .box1, .box2 {
+            float:right;
+            width: 33.3%;
+            background-color: #bbb;
+            height: 300px;
+            margin-right: 2px;
+        }
+
+        h1 {
+            clear: right;
+        }
+
+        img{
+            float: left;
+        }
+
+        p {
+            /* clear: left; */
+            color: red;
+        }
+
+        /*POSITION */
+        .static {
+            position: static;
+            border: 1px solid green;
+            width: 30%;
+        }
+
+        .relative {
+            position: relative;
+           bottom: 300px;
+            border: 1px solid green;
+            width: 30%;
+        }
+
+        .fixed {
+            position: fixed;
+            bottom: 300px;
+            right: 0;
+            border: 1px solid green;
+            width: 30%;
+        }
+
+        .absolute {
+            position: absolute;
+            bottom: 300px;
+            right: 0;
+            border: 1px solid green;
+            width: 30%;
+        }
+
+        /* Display properties */
+        p.ex1 {display: none};
+        p.ex2 {display: inline};
+        p.ex3 {display: block};
+        p.ex4 {display: inline-block};
+
+
+    </style>
+<body>
+
+    <div class="box1"> Box 1 </div>
+    <div class="box2"> Box 2 </div>
+
+    <h1> Clear Property </h1>
+
+    <img src="https://www.w3schools.com/cssref/w3css.gif" width="100" height="132">
+    <img src="https://www.w3schools.com/cssref/w3css.gif" width="100" height="132">
+    <img src="https://www.w3schools.com/cssref/w3css.gif" width="100" height="132">
+    <img src="https://www.w3schools.com/cssref/w3css.gif" width="100" height="132">
+    <img src="https://www.w3schools.com/cssref/w3css.gif" width="100" height="132">
+
+    <img src="https://www.w3schools.com/cssref/w3css.gif" width="100" height="132">
+
+    <p> This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text. </p>
+    
+    <hr>
+    <h2> Position </h2>
+
+    <h3> Position: Static <h3>
+    <div class="static">
+        This div has static position 
+    </div>
+
+    <h3> Position: Relative <h3>
+        <div class="relative">
+            This div has static relative
+        </div>
+
+    <h3> Position: Fixed <h3>
+        <div class="fixed">
+            This div has static fixed
+        </div>
+
+    <h3> Position: Absolute <h3>
+        <div class="absolute">
+            This div has static absolute
+        </div>
+    
+    
+    <hr>
+    <h3> Display Properties </h3>
+
+    <h2> Display: Non </h2>
+    <div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, labore? Deleniti sint consectetur asperiores <p class="ex1"> HELLO WORLD </p> corporis vel doloribus blanditiis culpa. Molestias fugit alias nam amet odio dolorem eius nihil, non voluptates.
+    </div>
+
+    <h2> Display: Inline </h2>
+    <div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, labore? Deleniti sint consectetur asperiores <p class="ex2"> HELLO WORLD </p> corporis vel doloribus blanditiis culpa. Molestias fugit alias nam amet odio dolorem eius nihil, non voluptates.
+    </div>
+
+    <h2> Display: block </h2>
+    <div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, labore? Deleniti sint consectetur asperiores <p class="ex3"> HELLO WORLD </p> corporis vel doloribus blanditiis culpa. Molestias fugit alias nam amet odio dolorem eius nihil, non voluptates.
+    </div>
+
+    <h2> Display: inline-block </h2>
+    <div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, labore? Deleniti sint consectetur asperiores <p class="ex4"> HELLO WORLD </p> corporis vel doloribus blanditiis culpa. Molestias fugit alias nam amet odio dolorem eius nihil, non voluptates.
+    </div>
+
+
+    
+    
+
+
+</body>
+</html>
